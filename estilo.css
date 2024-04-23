@@ -1,3 +1,57 @@
 h1 {
     text-align: center;
 }
+
+body
+{
+    margin: 10px auto;
+    font-family: "Verdana";
+    color: rgb(7, 7, 7);
+    width: 80%;
+}
+
+nav
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+nav ul
+{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 2px;
+    margin-top: 0.2em;
+}
+
+.izquierdo
+{
+    float: left;
+}
+.boton
+{
+    background-color: #f8c2d4;
+    color: #000000;
+    display: inline-block;
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 140px;
+    text-decoration: none;
+    box-shadow: 0px 3px 5px #5a8d8d;
+    border-radius: 25px;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    overflow:hidden;
+    background-color: #dabef5;
+    margin-bottom:0px;
+    padding: 0px;
+    border-radius: 0px 0px 25px 25px;
+    border-style: none;
+}
