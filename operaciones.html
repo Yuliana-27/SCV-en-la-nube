@@ -20,7 +20,107 @@
             <li><a class="boton" href="operaciones.html">Operaciones</a></li>
         </ul>
     </nav>
-    <h2>Operaciosnes Basicas de GitHub</h2>
+    <h2>Operaciones Basicas de Git y GitHub</h2>
+    <table class="tabla" border="1" summary="Operaciones en Git">
+        <thead>
+            <tr>
+                <th><strong>Significado</strong></th>
+                <th><strong>Código</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Push de la rama actual</th>
+                <th>git push origin $rama_actual</th>
+            </tr>
+            <tr>
+                <th>Volver a un commit anterior, descartando los cambios</th>
+                <th>git reset --HARD $SHA1</th>
+            </tr>
+            <tr>
+                <th>Ver y descargar Ramas remotas</th>
+                <th>git remote show origin</th>
+            </tr>
+            <tr>
+                <th>Si hay alguna rama de la cual no tengamos los datos aún</th>
+                <th>git fetch origin</th>
+            </tr>
+            <tr>
+                <th>Obtener la rama remota</th>
+                <th>git checkout --track -b $rama origin/$rama</th>
+            </tr>
+            <tr>
+                <th>Crear una rama basada en el HEAD</th>
+                <th>git branch $branch</th>
+            </tr>
+            <tr>
+                <th>Eliminar una rama local</th>
+                <th>git branch -d $branch</th>
+            </tr>
+            <tr>
+                <th>Eliminar una rama remota</th>
+                <th>git push origin :$branch</th>
+            </tr>
+            <tr>
+                <th>Cambiar el nombre de una rama</th>
+                <th>git branch -m $nombre_rama_anterior $nombre_rama_nuevo</th>
+            </tr>
+            <tr>
+                <th>Ver los tags locales</th>
+                <th>git tag </th>
+            </tr>
+            <tr>
+                <th> Deshacer el último commit (sin haber hecho push)</th>
+                <th>git reset --soft HEAD~1</th>
+            </tr>
+            <tr>
+                <th>Subir a la rama Commits parciales (los ficheros que no añado se quedan en el stash y se recuperan luego)</th>
+                <th>git add $file
+                    git commit -m "Mensaje"
+                    git stash
+                    git pull --rebase origin $rama
+                    git push origin rama
+                    git stash pop</th>
+                </tr>
+                <tr style="text-align: center;">
+                    <td colspan="2" ><strong>GitHub</strong></td>
+                </tr>
+                <tr>
+                    <th>Una vez que has inicializado el repositorio puedes empezar a realizar cambios en los archivos de tu proyecto</th>
+                    <th>git init.</th>        
+                </tr>
+                <tr>
+                    <th>El comando git clone se utiliza para crear una copia exacta de un repositorio</th>
+                    <th>git clone [URL del repositorio remoto]</th>
+                </tr>
+                <tr>
+                    <th>git add se utiliza para agregar cambios realizados en archivos específicos</th>
+                    <th>git add .</th>
+                </tr>
+                <tr>
+                    <th>El comando git commit se utiliza para guardar de manera permanente los cambios</th>
+                    <th>git commit -m "mensaje del commit"</th>
+                </tr>
+                <tr>
+                    <th>Cuando ejecutas git status, recibirás información sobre los siguientes aspectos:
+                        Rama actual
+                        Cambios sin preparar
+                        Ramas y Commits
+                    </th>
+                    <th>git status</th>
+                </tr>
+                <tr>
+                    <th>El comando git push se utiliza para enviar los commits locales de tu repositorio a un repositorio remoto.</th>
+                    <th>git push [repositorio-remoto] [rama]</th>
+                </tr>
+        </tbody>
+    </table>
+
+    <h2 class="ejercicio">Video</h2>
+    <video src="videos/Operaciones Basicas de GitGub ‐ Hecho con Clipchamp.mp4" controls autoplay muted
+    width="1000px"
+    height="500px"
+    ></video>
 
     <footer>
         <div class="derecho">
