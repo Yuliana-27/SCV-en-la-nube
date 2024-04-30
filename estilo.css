@@ -45,7 +45,8 @@ body
     font-family: "Verdana";
     color: rgb(53, 54, 83);
     width: 70%;
-    background-image: url(imagenes/gratis-png-azul-tecnologia-ciencia-y-tecnologia.png);
+    background-image: url(imagenes/azul.jpg);
+    background-attachment: fixed;
 }
 
 nav
